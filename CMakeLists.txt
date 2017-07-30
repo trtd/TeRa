@@ -37,22 +37,11 @@ else()
 endif()
 
 # Find Qt libraries
-find_package(Qt5Core REQUIRED)
+find_package( Qt5 COMPONENTS Core Widgets Network Concurrent Gui LinguistTools REQUIRED )
 include_directories(${Qt5Core_INCLUDE_DIRS})
-find_package(Qt5Network REQUIRED)
 include_directories(${Qt5Network_INCLUDE_DIRS})
-find_package(Qt5Concurrent REQUIRED)
 include_directories(${Qt5Concurrent_INCLUDE_DIRS})
-find_package(Qt5Gui REQUIRED)
-find_package(Qt5Widgets REQUIRED)
 include_directories(${Qt5Widgets_INCLUDE_DIRS})
-
-FIND_PACKAGE(Qt5LinguistTools)
-
-#find_package(qdigidoccommon)
-#SET (QTCOMMON_INCLUDE_DIRS "C:/Downloads/git/qt-common")
-#SET (QTCOMMON_LIBRARIES "C:/cmake_builds/qt-common_64/Release/qdigidoccommon.lib")
-#include_directories(${QTCOMMON_INCLUDE_DIRS})
 
 IF (WIN32)
     IF ($ENV{TERA_ARCH} STREQUAL "_32")
@@ -82,7 +71,7 @@ ELSE()
     IF (APPLE)
         SET (ZLIB_LIBRARIES $ENV{TERA_ZLIB_DIR}/lib/libz.a)
         SET (ZIP_LIBRARIES $ENV{TERA_LIBZIP_DIR}/lib/libzipstatic.a)
-        SET (ZIP_INCLUDE_DIR $ENV{TERA_LIBZIP_DIR}/include $ENV{TERA_LIBZIP_DIR}/lib/libzip/include/)
+        SET (ZIP_INCLUDE_DIR $ENV{TERA_ZLIB_DIR}/include $ENV{TERA_LIBZIP_DIR}/include $ENV{TERA_LIBZIP_DIR}/lib/libzip/include/)
         include_directories( ${ZIP_INCLUDE_DIR} )
         # OpenSSL...
         SET (OPENSSL_INCLUDE_DIR $ENV{TERA_OPENSSL_DIR}/include/)
