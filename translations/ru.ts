@@ -381,6 +381,14 @@ Please check if ID-card is still in the reader.</source>
         <translation>URL-адрес сервера отметки времени пуст.</translation>
     </message>
     <message>
+        <source>No directories selected for search!</source>
+        <translation>Для поиска не выбрали ни одного каталога!</translation>
+    </message>
+    <message>
+        <source>SANDBOX_MESSAGE</source>
+        <translation>Внимание! В оператционной системе macOS допуск к жесткому диску ограничен с технологией App Sandbox. Согласитесъ выбранными каталогами в диалоге открытия фаилов.</translation>
+    </message>
+    <message>
         <location filename="../poc/main_window.cpp" line="367"/>
         <source>The space needed to timestamp all the DDOC files found exceeds the amount of free space found:
 

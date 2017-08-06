@@ -121,13 +121,18 @@ protected:
     /// Check if settings are complete + do required GUI interactions
     bool checkSettingsWithGUI();
     void fillProgressBar();
-    void fillDoneLog();
+    bool fillDoneLog();
 private:
     enum PAGE {START, PROCESS, READY, INTRO};
+    void resetLogFormat();
     void setPage(PAGE p);
     void setBackgroundImg(QString path);
     void doUserCancel(QString msg = QString());
     void loadTranslation(QString const& language_short);
+#ifdef Q_OS_OSX
+    bool grantPermissions(QSet<QString> const& deniedDirs);
+    void showSandboxNotification();
+#endif
 private:
     bool initDone;
     bool showingIntro;

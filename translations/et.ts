@@ -395,6 +395,15 @@ Please check if ID-card is still in the reader.</source>
         <translation>Ajatempliserveri URL on tühi.</translation>
     </message>
     <message>
+        <source>No directories selected for search!</source>
+        <translation>Otsinguks ei valitud ühtegi kataloogi!</translation>
+    </message>
+    <message>
+        <source>SANDBOX_MESSAGE</source>
+        <translation>Tähelepanu!
+macOS operatsioonisüsteemis peate te lubama rakendusele kõvaketta ligipääsu käsitsi kuna see on piiratud App Sandbox reeglitega. Aktsepteerige pakutud kataloogid failivaliku aknas.</translation>
+    </message>
+    <message>
         <source> * &apos;%1&apos;: free space %2, space needed %3 (approximately)</source>
         <translation type="vanished"> * &apos;%1&apos;: vaba ruumi %2, vajalik ruum (ligikaudu) %3</translation>
     </message>

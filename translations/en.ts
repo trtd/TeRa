@@ -400,6 +400,15 @@ Please check if ID-card is still in the reader.</source>
         <translation>Time server URL is empty.</translation>
     </message>
     <message>
+        <source>No directories selected for search!</source>
+        <translation>No directories selected for search!</translation>
+    </message>
+    <message>
+        <source>SANDBOX_MESSAGE</source>
+        <translation>Attention!
+In macOS the access to folders on hard drive must be given manually because of the App Sandbox restrictions. Accept the selected folders in File Open dialog.</translation>
+    </message>
+    <message>
         <source> * &apos;%1&apos;: free space %2, space needed %3 (approximately)</source>
         <translation type="vanished"> * %1: free space %2, space needed %3 (approximately)</translation>
     </message>
